@@ -13,8 +13,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(array) {
-  return array[0];
+const tail = function(arr) {
+  return arr.slice(1);
 };
 
-console.assert(head([5,6,7]), 5);
+
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result.length, 2);
+assertEqual(result[0], "Lighthouse");
+assertEqual(result[1], "Labs");
