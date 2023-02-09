@@ -20,8 +20,8 @@ const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (let item in allItems) {
     if (itemsToCount[item]) {
-      !results[item] ? results[item] = 1 : results[item] += 1;
-    }
+      !results[item] ? results[item] = 1 : results[item] += 1
+    };
   }
   return results;
 };
