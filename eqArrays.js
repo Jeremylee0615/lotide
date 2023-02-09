@@ -16,13 +16,11 @@ const eqArrays = function(arr1,arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   } 
-  for (let value = 0; value < arr1.length; value += 1) {
-    if ((Array.isArray(arr1[value]) || Array.isArray(arr2[value])) && eqArrays(arr1[value], arr2[value]) === false) {
+  for (let i = 0; i < arr1.length; i++) {
+    if (Array.isArray(arr1[i]) && eqArrays(arr1[i], arr2[i]) === false) {
       return false;
-    } else if (Array.isArray(arr1[value]) || Array.isArray(arr2[value])) {
-      eqArrays(arr1[value], arr2[value]);
-    } else if (arr1[value] !== arr2[value]) {
-      return false;
+    } if (!(Array.isArray(arr1[i])) && arr1[i] !== arr2[i]) {
+        return false;
     }
   }
   return true;
