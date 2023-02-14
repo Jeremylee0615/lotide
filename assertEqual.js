@@ -13,6 +13,4 @@ const assertEqual = function(actual, expected) {
 };
 
 
-console.assert(assertEqual(1, 1));
-console.assert(assertEqual("Lighthouse Labs", "Bootcamp"));
-
+module.exports = assertEqual;
