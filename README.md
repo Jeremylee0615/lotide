@@ -8,8 +8,7 @@ A mini clone of the [Lodash](https://lodash.com) library.
 
 This project was created and published by me as part of my learnings at Lighthouse Labs. 
 
-**_Heads Up_** : Some of the codes are referenced or modified from various online sources for learning purposes. Hencewise, they may not be original codes. They shall get updated to complete originals once javascript skills improve over times. 
-
+**_Heads Up_** : Some of the codes are referenced or modified from various online sources for learning purposes.
 ## Usage
 
 **Install it:**
